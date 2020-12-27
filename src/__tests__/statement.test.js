@@ -13,3 +13,7 @@ You earned 47 credits
 `
   );
 });
+
+test("should throw error for wrong play type", () => {
+  expect(statement(invoice[1], plays)).toThrow();
+});
